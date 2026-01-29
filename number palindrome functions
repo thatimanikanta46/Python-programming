@@ -1,0 +1,13 @@
+def my_function(n,reverse):
+    original=n
+    while n>0:
+        digit=n%10
+        reverse=reverse*10+digit
+        n//=10
+    if original==reverse:
+        return "palindrome"
+    else:
+        return "not palindrome"
+n=int(input("enter the number:"))
+reverse=0
+print(my_function(n,reverse))
