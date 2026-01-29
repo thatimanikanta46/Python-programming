@@ -1,0 +1,8 @@
+def my_function(n1,n2,n3):
+    total=n1+n2+n3
+    average=total/3
+    return f"total three numbers ={total}\naverage three numbers ={average}"
+n1=int(input("enter the first number:"))
+n2=int(input("enter the second number:"))
+n3=int(input("enter the third number:"))
+print(my_function(n1,n2,n3))
