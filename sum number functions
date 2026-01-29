@@ -1,0 +1,9 @@
+def my_function(s,add):
+    while s>0:
+        digit=s%10
+        add+=digit
+        s//=10
+    return add
+s=int(input("enter the number:"))
+add=0
+print("sum number =",my_function(s,add))
