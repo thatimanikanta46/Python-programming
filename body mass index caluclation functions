@@ -1,0 +1,13 @@
+def my_function(w,h):
+    bmi=w/(h**2)
+    if bmi<=18:
+        return "underweight"
+    elif bmi>18 and bmi<=25:
+        return "overweight"
+    elif bmi>25 and bmi<=30:
+        return "obese"
+    else:
+        return "severely obese"
+w=float(input("enter the weight:"))
+h=float(input("enter the height:"))
+print(my_function(w,h))
